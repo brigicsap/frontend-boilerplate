@@ -1,0 +1,25 @@
+//----------------------------------\\
+// ALIGNMENTS
+//----------------------------------\\
+
+.u-center {
+    text-align: center;
+}
+
+.u-left {
+    text-align: left;
+}
+
+.u-right {
+    text-align: right;
+}
+
+.u-v-middle {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.u-h-middle {
+    left: 50%;
+    transform: translateX(-50%);
+}

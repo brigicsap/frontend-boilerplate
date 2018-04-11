@@ -1,0 +1,43 @@
+//----------------------------------\\
+// MIXINS
+//----------------------------------\\
+
+// COVER MIXIN
+@mixin cover {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+//HOVER MIXIN
+@mixin hover($attr, $color) {
+    &:hover,
+    &:focus,
+    &:active {
+        transition: all 0.2s;
+        #{$attr}: $color;
+    }
+
+    a,
+    button {
+        transition: all 0.2s;
+        cursor: pointer;
+
+        &:hover,
+        &:focus,
+        &:active {
+            transition: all 0.2s;
+            #{$attr}: $color;
+        }
+    }
+}
+
+@mixin icon($icon) {
+    content: '';
+    position: absolute;
+    height: 2rem;
+    width: 2rem;
+    background: url('/svgs/#{$icon}.svg');
+
+    @include bg(cover);
+}

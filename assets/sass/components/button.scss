@@ -1,0 +1,23 @@
+//----------------------------------\\
+// BUTTONS
+//----------------------------------\\
+
+%btn {
+    position: relative;
+    -webkit-appearance: none;
+    background: transparent;
+    text-decoration: none;
+    white-space: nowrap;
+    border: none;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        outline: none;
+        text-decoration: none;
+    }
+}
+
+.btn {
+    @extend %btn;
+}

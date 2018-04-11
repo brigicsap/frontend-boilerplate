@@ -1,0 +1,46 @@
+//----------------------------------\\
+// FLEXBOX
+//----------------------------------\\
+
+.u-flex {
+    @include bp(SM) {
+        display: flex;
+    }
+}
+
+.u-flex-wrap {
+    flex-wrap: wrap;
+}
+
+.u-flex-rw {
+    flex-flow: row wrap;
+}
+
+.u-flex-cw {
+    flex-flow: column wrap;
+}
+
+.u-flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.u-flex-center-h {
+    justify-content: center;
+}
+
+.u-flex-center-v {
+    align-items: center;
+}
+
+.u-flex-start {
+    align-items: flex-start;
+}
+
+.u-flex-end {
+    align-items: flex-end;
+}
+
+.u-flex-s-between {
+    justify-content: space-between;
+}
