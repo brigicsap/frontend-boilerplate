@@ -1,21 +1,21 @@
 {
-    "name": "shed-frontend-starterpack",
+    "name": "frontend-boilerplate",
     "version": "1.0.0",
-    "description": "A boilerplate for Shed projects frontend setup.",
+    "description": "A frontend boilerplate setup.",
     "main": "webpack.config.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/shedcollective/shed-frontend-starterpack.git"
+        "url": "git+https://github.com/brigicsap/frontend-boilerplate.git"
     },
-    "author": "Brigi Csap <brigi@shedcollective.org>",
+    "author": "Brigi Csap <brigi.csap@gmail.com>",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/shedcollective/shed-frontend-starterpack/issues"
+        "url": "https://github.com/brigicsap/frontend-boilerplate/issues"
     },
-    "homepage": "https://github.com/shedcollective/shed-frontend-starterpack#readme",
+    "homepage": "https://github.com/brigicsap/frontend-boilerplate#readme",
     "devDependencies": {
         "autoprefixer": "^8.2.0",
         "babel-core": "^6.26.0",
