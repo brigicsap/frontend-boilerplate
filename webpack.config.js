@@ -1,4 +1,5 @@
 const webpack = require('webpack');
+const path = require('path');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
@@ -47,7 +48,33 @@ module.exports = {
                         loader: 'eslint-loader'
                     }
                 ]
-            }
+            },
+            {
+                test: /\.(png|jpg|gif|ico)$/,
+                include: path.join(__dirname, 'assets/img/'),
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: '_img/[name].[ext]',
+                            publicPath: '/',
+                        },
+                    }
+                ]
+            },
+            {
+                test: /\.(woff2?|ttf|eot|otf)$/,
+                use: [
+                    {
+                        loader: 'url-loader',
+                        options: {
+                            name: '_fonts/[name].[ext]',
+                            limit: 10000,
+                            publicPath: '/',
+                        },
+                    }
+                ]
+            },
         ]
     },
     plugins: [
